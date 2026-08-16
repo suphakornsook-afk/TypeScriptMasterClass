@@ -14,4 +14,6 @@ let people: person[]= [
     {id:2,name: 'christ',fictional: false}
 ]
 
+
+
 console.log(people[0]);
