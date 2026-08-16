@@ -8,5 +8,16 @@ let people = [
     { id: 1, name: 'mario', fictional: true },
     { id: 2, name: 'christ', fictional: false }
 ];
+function addTwoNumbers(a, b) {
+    return a + b;
+}
+const subtractTwoNumbers = (a, b) => {
+    return a - b;
+};
+function addAllnumber(items) {
+    const total = items.reduce((a, c) => a + c, 0);
+    console.log(total);
+}
+addAllnumber([5, 4, 3, 2, 1]);
 console.log(people[0]);
 //# sourceMappingURL=index.js.map
