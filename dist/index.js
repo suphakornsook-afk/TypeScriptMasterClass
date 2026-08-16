@@ -19,5 +19,10 @@ function addAllnumber(items) {
     console.log(total);
 }
 addAllnumber([5, 4, 3, 2, 1]);
-console.log(people[0]);
+function formatGreeting(name, greeting) {
+    const s = greeting + "," + name;
+    return s;
+}
+const result = formatGreeting('mario', 'Sawatdee');
+console.log(result);
 //# sourceMappingURL=index.js.map

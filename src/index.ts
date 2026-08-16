@@ -28,4 +28,11 @@ function addAllnumber(items: number[]): void{
 
 addAllnumber([5,4,3,2,1])
 
-console.log(people[0]);
+function formatGreeting(name:string, greeting: string){
+    const s = greeting+ "," + name;
+    return s
+}
+
+const result = formatGreeting('mario','Sawatdee')
+console.log(result)
+
