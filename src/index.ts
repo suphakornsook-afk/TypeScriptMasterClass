@@ -34,5 +34,33 @@ function formatGreeting(name:string, greeting: string){
 }
 
 const result = formatGreeting('mario','Sawatdee')
-console.log(result)
 
+interface Author{
+    name: string,
+    avatar: string,
+}
+
+const authorOne: Author = {name: 'mario', avatar: 'pic here'}
+
+interface Post{
+    title: string,
+    body: string,
+    tags: string[],
+    create_at: Date,
+    author: Author,
+}
+
+const newPost: Post = {
+    title: 'my first post',
+    body: 'blah blah',
+    tags : ['tech','food'],
+    create_at : new Date(),
+    author: authorOne,
+}
+
+function createPost(post:Post): void{
+    console.log(`Created post ${post.title} by ${post.author.name}`)
+
+}
+
+createPost(newPost);

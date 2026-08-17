@@ -24,5 +24,16 @@ function formatGreeting(name, greeting) {
     return s;
 }
 const result = formatGreeting('mario', 'Sawatdee');
-console.log(result);
+const authorOne = { name: 'mario', avatar: 'pic here' };
+const newPost = {
+    title: 'my first post',
+    body: 'blah blah',
+    tags: ['tech', 'food'],
+    create_at: new Date(),
+    author: authorOne,
+};
+function createPost(post) {
+    console.log(`Created post ${post.title} by ${post.author.name}`);
+}
+createPost(newPost);
 //# sourceMappingURL=index.js.map
