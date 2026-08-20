@@ -99,3 +99,24 @@ function formatUser(user:User): void{
 
 formatUser(userOne)
 formatUser({name: 'Warrio',score: 45})
+
+interface Person {
+    id: number,
+    name: string,
+    fictional: boolean,
+    role?: string
+}
+
+const characters: Person[] =[
+    { id: 1, name: "Mario", fictional: true, role: "Plumber / Hero" },
+  { id: 2, name: "Chris Evans", fictional: false, role: "Actor" },
+  { id: 3, name: "Suphakorn", fictional: false, role: "Software Tester / Dev" }
+];
+
+const realPeople = characters.filter((person) => !person.fictional);
+
+console.log("All Characters");
+console.log(characters)
+
+console.log("\nReal People")
+console.log(realPeople)
