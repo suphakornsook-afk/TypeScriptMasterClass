@@ -64,4 +64,14 @@ console.log("All Characters");
 console.log(characters);
 console.log("\nReal People");
 console.log(realPeople);
+function processUserId(id) {
+    if (typeof id == "string") {
+        console.log(`Processing string ID: ${id.toUpperCase()}`);
+    }
+    else if (typeof id == "number") {
+        console.log(`Processing numeric ID: ${id.toFixed(0)}`);
+    }
+}
+processUserId("user1");
+processUserId(12);
 //# sourceMappingURL=index.js.map
